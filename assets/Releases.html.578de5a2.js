@@ -1,0 +1,1 @@
+const e={key:"v-4c1019bf",path:"/documentation/Releases.html",title:"Software releases",lang:"en-US",frontmatter:{sidebarDepth:2},excerpt:"",headers:[],git:{updatedTime:1641903701e3,contributors:[{name:"Darina laptop",email:"darina.storozhuk@uni-jena.de",commits:1}]},filePathRelative:"documentation/Releases.md"};export{e as data};
