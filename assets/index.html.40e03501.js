@@ -1,0 +1,1 @@
+const t={key:"v-a4b78024",path:"/documentation/",title:"Introduction",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1641478389e3,contributors:[{name:"Darina Storozhuk",email:"darina.storozhuk@uni-jena.de",commits:1}]},filePathRelative:"documentation/README.md"};export{t as data};
