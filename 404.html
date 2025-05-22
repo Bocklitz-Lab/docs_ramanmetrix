@@ -1,33 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="generator" content="VuePress 2.0.0-beta.41">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.22" />
     <style>
       :root {
-        --c-bg: #fff;
+        --vp-c-bg: #fff;
       }
-      html.dark {
-        --c-bg: #22272e;
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
       }
-      html, body {
-        background-color: var(--c-bg);
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
       }
     </style>
     <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme');
-			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
-				document.documentElement.classList.toggle('dark', true);
-			}
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
     </script>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png"><link rel="apple-touch-icon" sizes="512X512" href="/assets/favicons/android-chrome-512x512.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/favicons/favicon.ico"><meta name="msapplication-TileColor" content="#3a0839"><meta name="theme-color" content="#ffffff"><title>RAMANMETRIX Software Documentation</title><meta name="description" content="RAMANMETRIX Software User Documentation">
-    <link rel="modulepreload" href="/assets/app.7d0b63b1.js"><link rel="modulepreload" href="/assets/404.html.eb6ba65e.js"><link rel="modulepreload" href="/assets/404.html.0191d978.js"><link rel="prefetch" href="/assets/index.html.e2f49edf.js"><link rel="prefetch" href="/assets/Data.html.3b543a95.js"><link rel="prefetch" href="/assets/Desktop.html.e938a653.js"><link rel="prefetch" href="/assets/Online.html.11ac7ac1.js"><link rel="prefetch" href="/assets/Press.html.34f21854.js"><link rel="prefetch" href="/assets/index.html.d4727a52.js"><link rel="prefetch" href="/assets/Releases.html.1ac9602e.js"><link rel="prefetch" href="/assets/Started.html.0035dd4a.js"><link rel="prefetch" href="/assets/Tools.html.e00f7285.js"><link rel="prefetch" href="/assets/Tutorial.html.e035227e.js"><link rel="prefetch" href="/assets/index.html.a4b0824d.js"><link rel="prefetch" href="/assets/Data.html.2af01e7f.js"><link rel="prefetch" href="/assets/Desktop.html.8358208f.js"><link rel="prefetch" href="/assets/Online.html.ac92002c.js"><link rel="prefetch" href="/assets/Press.html.0b559c91.js"><link rel="prefetch" href="/assets/index.html.d1096242.js"><link rel="prefetch" href="/assets/Releases.html.f0934854.js"><link rel="prefetch" href="/assets/Started.html.7c88c982.js"><link rel="prefetch" href="/assets/Tools.html.20a5f77a.js"><link rel="prefetch" href="/assets/Tutorial.html.f309ccb9.js"><link rel="prefetch" href="/assets/404.a070bc29.js"><link rel="prefetch" href="/assets/Layout.84bad25a.js">
-    <link rel="stylesheet" href="/assets/style.389cee33.css">
+    <link rel="preload" href="/assets/style-Bm_RH_G6.css" as="style"><link rel="stylesheet" href="/assets/style-Bm_RH_G6.css">
+    <link rel="modulepreload" href="/assets/app-xWLgu9JX.js"><link rel="modulepreload" href="/assets/404.html-CjlL0Z2u.js">
+    <link rel="prefetch" href="/assets/index.html-Bf1io31F.js" as="script"><link rel="prefetch" href="/assets/Data.html-D17fPQ9L.js" as="script"><link rel="prefetch" href="/assets/Desktop.html-GuTDSz28.js" as="script"><link rel="prefetch" href="/assets/Online.html-7OjvnDeW.js" as="script"><link rel="prefetch" href="/assets/Press.html-CGNmB82d.js" as="script"><link rel="prefetch" href="/assets/index.html-B5Y_ISSP.js" as="script"><link rel="prefetch" href="/assets/Releases.html-CWi2KtHI.js" as="script"><link rel="prefetch" href="/assets/Started.html-D4Pc3HUS.js" as="script"><link rel="prefetch" href="/assets/Tools.html-Dq1_0LAm.js" as="script"><link rel="prefetch" href="/assets/Tutorial.html-D7t3C6ly.js" as="script">
   </head>
   <body>
-    <div id="app"><!--[--><div class="theme-container"><div class="theme-default-content"><h1>404</h1><blockquote>That&#39;s a Four-Oh-Four.</blockquote><a href="/" class="">Take me home</a></div></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.7d0b63b1.js" defer></script>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-ec9917b8><main class="page" data-v-ec9917b8><div vp-content data-v-ec9917b8><h1 data-v-ec9917b8>404</h1><blockquote data-v-ec9917b8>There&#39;s nothing here.</blockquote><a class="route-link" href="/" data-v-ec9917b8>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-xWLgu9JX.js" defer></script>
   </body>
 </html>
